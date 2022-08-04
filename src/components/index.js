@@ -1,3 +1,5 @@
 import Topbar from "./Topbar/Topbar";
+import Header from "./Header/Header";
+import Home from "./Home/Home";
 
-export default Topbar;
+export { Topbar, Header, Home };
