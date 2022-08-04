@@ -9,7 +9,7 @@ import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free
 
 const Topbar = () => {
   return (
-    <Container fluid className='font-primary'>
+    <Container fluid className='font-primary sticky-top bg-white shadow-sm mb-4'>
       <Row className='align-items-center' style={{ minHeight: "80px"}}>
         <Col className="col-3 d-none d-md-block text-center">
           <a href="/" alt="Facebook"><FontAwesomeIcon icon={faFacebook} size="1x" className="mx-1 text-black"/></a>
