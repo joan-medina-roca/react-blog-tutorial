@@ -1,0 +1,4 @@
+h1#headerButton.btn:hover {
+    cursor: default;
+    border-color: white;
+}
