@@ -1,4 +1,28 @@
+h1#headerButton {
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 767px){
+    h1#headerButton {
+        font-size: 3.5rem;
+    }
+}
+
 h1#headerButton.btn:hover {
     cursor: default;
     border-color: white;
+}
+
+.headerImg {
+    height: 400px;
+    margin-top: -80px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px ){
+    .headerImg {
+        height: 300px;
+        margin-top: -65px;
+        object-fit: cover;
+    }
 }
