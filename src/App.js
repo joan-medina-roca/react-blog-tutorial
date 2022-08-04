@@ -1,4 +1,4 @@
-import Topbar from "./components/Topbar";
+import Topbar from "./components";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
