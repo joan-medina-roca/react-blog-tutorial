@@ -8,7 +8,7 @@ const Post = () => {
     <Container className='my-4'>
     <Row>
       <Col>
-        <img className='img-fluid rounded' src="https://images.pexels.com/photos/338936/pexels-photo-338936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Post Image" />
+        <img className='img-fluid rounded' src="https://images.pexels.com/photos/338936/pexels-photo-338936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A single post" />
       </Col>
     </Row>
     <Row>
