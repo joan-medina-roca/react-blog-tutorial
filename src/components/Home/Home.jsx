@@ -12,11 +12,11 @@ const Home = () => {
     <div style={{textAlign: "center"}}>
         <Header/>
         <Container fluid>
-          <Row className='px-0'>
+          <Row>
             <Col className='col-12 col-md-9'>
                 <Posts />
             </Col>
-            <Col className='col-3 d-none d-md-block'>
+            <Col className='col-3 d-none d-md-block border-start my-3'>
                 <Sidebar/>
             </Col>
           </Row>

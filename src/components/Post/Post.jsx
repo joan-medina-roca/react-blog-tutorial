@@ -1,10 +1,31 @@
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 
 import "./post.css"
 
 const Post = () => {
   return (
-    <div>The first Post</div>
+    <Container className='my-4'>
+    <Row>
+      <Col>
+        <img className='img-fluid rounded' src="https://images.pexels.com/photos/338936/pexels-photo-338936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Post Image" />
+      </Col>
+    </Row>
+    <Row>
+      <Col className='d-flex justify-content-center font-secondary'>
+        <h6 className="px-1 mt-2 text-warning">Music</h6>
+        <h6 className="px-1 mt-2 text-warning">Life</h6>
+      </Col>
+    </Row>
+    <Row>
+      <Col className="d-flex flex-column">
+        <h2 className='font-primary mb-0 h3'>Lorem ipsum dolor sit amet.</h2>
+        <p className='text-black-50 font-secondary'>1 Hour ago</p>
+      </Col>
+    </Row>
+
+
+    </Container>
   )
 }
 

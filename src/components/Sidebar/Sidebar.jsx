@@ -5,7 +5,7 @@ import "./sidebar.css"
 
 const Sidebar = () => {
   return (
-    <Container className='text-center font-primary border-start my-3 px-0'>
+    <Container className='text-center font-primary px-0'>
       <Row>
         <Col>
           <h4>About Me</h4>
