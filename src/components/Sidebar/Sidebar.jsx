@@ -1,17 +1,18 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { images } from '../../constants'
 
 import "./sidebar.css"
 
 const Sidebar = () => {
   return (
-    <Container className='text-center font-primary px-0'>
+    <Container className='text-center font-primary px-0 mt-3'>
       <Row>
         <Col>
           <h4>About Me</h4>
-          <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="This is me" className='rounded px-3 img-fluid'/>
-          <p className='mt-3 text-justify px-3' style={{ textAlign: "justify" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iste consectetur, alias maxime atque cumque nemo dolorum obcaecati! Cum, placeat!</p>
-          <h5>Categories:</h5>
+          <img src={images.joanmedina} alt="This is me" className='rounded img-fluid shadow' style={{ maxHeight: "250px"}}/>
+          <p className='mt-3 px-3' style={{ textAlign: "justify" }}>Hi! I'm Joan Medina Roca, web designer and front-end developer. I work with different technologies to create the best experiences that work across multiple devices.</p>
+          <h5>Post Categories:</h5>
           <ul className='list-unstyled'>
             <li className='w-50 d-inline-block'>Life</li>
             <li className='w-50 d-inline-block'>Music</li>

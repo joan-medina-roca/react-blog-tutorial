@@ -13,10 +13,10 @@ const Home = () => {
         <Header/>
         <Container fluid>
           <Row>
-            <Col className='col-12 col-md-9'>
+            <Col className='col-12 col-lg-9'>
                 <Posts />
             </Col>
-            <Col className='col-3 d-none d-md-block border-start my-3'>
+            <Col className='col-3 d-none d-lg-block border-start my-3'>
                 <Sidebar/>
             </Col>
           </Row>

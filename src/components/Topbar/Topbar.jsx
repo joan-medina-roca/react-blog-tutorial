@@ -20,12 +20,12 @@ const Topbar = () => {
         
           <Col className='col-12 col-md-6'>
           <Navbar expand="md"  className='d-flex flex-column'>
-          <Navbar.Brand href="#home" className='d-md-none mx-auto fs-4 mx-auto px-3'>JMR Blog</Navbar.Brand>
+          <Navbar.Brand href="/" className='d-md-none mx-auto fs-4 mx-auto px-3'>JMR Blog</Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" className='border border-0' style={{ outline: "none", boxShadow: "none"}}/>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mx-md-auto text-center align-items-center">
-                <Navbar.Brand href="#home" className='d-none d-md-block fs-4 mx-auto px-3'>JMR Blog</Navbar.Brand>
+                <Navbar.Brand href="/" className='d-none d-md-block fs-4 mx-auto px-3'>JMR Blog</Navbar.Brand>
                 <Nav.Link href="#link" className='fw-light fs-5 px-1'>Home</Nav.Link>
                 <Nav.Link href="#link" className='fw-light fs-5 px-1'>About</Nav.Link>
                 <Nav.Link href="#link" className='fw-light fs-5 px-1'>Contact</Nav.Link>
