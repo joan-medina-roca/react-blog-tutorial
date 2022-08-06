@@ -1,4 +1,6 @@
-import { Topbar, Home } from "./components";
+import { Topbar } from "./components";
+
+import { Home } from "./pages";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 

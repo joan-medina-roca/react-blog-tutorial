@@ -1,9 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-
-import Header from '../Header/Header'
-import Posts from '../Posts/Posts'
-import Sidebar from '../Sidebar/Sidebar'
+import { Header, Posts, Sidebar } from '../../components'
 
 import "./home.css"
 
