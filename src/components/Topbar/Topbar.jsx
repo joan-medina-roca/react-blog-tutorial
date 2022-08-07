@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 const Topbar = () => {
   const user = true;
   return (
-    <Container fluid className='font-primary sticky-top bg-white shadow-sm mb-4'>
+    <Container fluid className='font-primary sticky-md-top bg-white shadow-sm mb-4'>
       <Row className='align-items-center' style={{ minHeight: "80px"}}>
         <Col className="col-3 d-none d-md-block text-center">
           <a href="/" alt="Facebook"><FontAwesomeIcon icon={faFacebook} size="1x" className="mx-1 text-black"/></a>
@@ -29,15 +29,28 @@ const Topbar = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mx-md-auto text-center align-items-center">
                 <Navbar.Brand href="/" className='d-none d-md-block fs-4 mx-auto px-3'>JMR Blog</Navbar.Brand>
-                <Link to="/write" className='text-black text-decoration-none fw-light fs-5 px-1'>Write
+                <Link to="/write" className='text-black text-decoration-none fw-light fs-5 p-1'>Write
                 </Link>
-                <Link to="/about" className='text-black text-decoration-none fw-light fs-5 px-1'>About
+                <Link to="/about" className='text-black text-decoration-none fw-light fs-5 p-1'>About
                 </Link>
-                <Link to="/contact" className='text-black text-decoration-none fw-light fs-5 px-1'>Contact
+                <Link to="/contact" className='text-black text-decoration-none fw-light fs-5 p-1'>Contact
                 </Link>
-                <Link to="/" className='text-black text-decoration-none fw-light fs-5 px-1'>
+                <Link to="/" className='text-black text-decoration-none fw-light fs-5 p-1'>
                   {user && "Logout"}
                 </Link>
+                  {
+                user ? (
+              <a href="/settings"><img src={images.joanmedina} alt="User Profile" className='topImgResp m-2 d-md-none' style={{objectFit: "cover"}}/>
+              </a>
+                ) : (
+                  <>
+                  <Link to="/login" className='text-black text-decoration-none fw-light fs-5 px-1'>Login
+                  </Link>
+                  <Link to="/register" className='text-black text-decoration-none fw-light fs-5 px-1'>Register
+                  </Link>
+                  </>
+                )
+              }
               </Nav>
             </Navbar.Collapse>
             </Navbar>

@@ -4,6 +4,12 @@
     border-radius: 50%;
 }
 
+.topImgResp{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
 .verticalMiddle{
     vertical-align: middle;
 }
