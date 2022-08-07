@@ -6,8 +6,11 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import "./topbar.css"
 
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { images } from '../../constants'
+import { Link } from 'react-router-dom'
 
 const Topbar = () => {
+  const user = true;
   return (
     <Container fluid className='font-primary sticky-top bg-white shadow-sm mb-4'>
       <Row className='align-items-center' style={{ minHeight: "80px"}}>
@@ -26,18 +29,34 @@ const Topbar = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mx-md-auto text-center align-items-center">
                 <Navbar.Brand href="/" className='d-none d-md-block fs-4 mx-auto px-3'>JMR Blog</Navbar.Brand>
-                <Nav.Link href="#link" className='fw-light fs-5 px-1'>Home</Nav.Link>
-                <Nav.Link href="#link" className='fw-light fs-5 px-1'>About</Nav.Link>
-                <Nav.Link href="#link" className='fw-light fs-5 px-1'>Contact</Nav.Link>
-                <Nav.Link href="#link" className='fw-light fs-5 px-1'>Write</Nav.Link>
-                <Nav.Link href="#link" className='fw-light fs-5 px-1'>Logout</Nav.Link>
+                <Link to="/write" className='text-black text-decoration-none fw-light fs-5 px-1'>Write
+                </Link>
+                <Link to="/about" className='text-black text-decoration-none fw-light fs-5 px-1'>About
+                </Link>
+                <Link to="/contact" className='text-black text-decoration-none fw-light fs-5 px-1'>Contact
+                </Link>
+                <Link to="/" className='text-black text-decoration-none fw-light fs-5 px-1'>
+                  {user && "Logout"}
+                </Link>
               </Nav>
             </Navbar.Collapse>
             </Navbar>
           </Col>
 
           <Col className='col-3 d-none d-md-block text-center'>
-            <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="User Profile" className='topImg mx-2'/>
+            {
+              user ? (
+            <a href="/settings"><img src={images.joanmedina} alt="User Profile" className='topImg mx-2' style={{objectFit: "cover"}}/>
+            </a>
+              ) : (
+                <>
+                <Link to="/login" className='text-black text-decoration-none fw-light fs-5 px-1'>Login
+                </Link>
+                <Link to="/register" className='text-black text-decoration-none fw-light fs-5 px-1'>Register
+                </Link>
+                </>
+              )
+            }
             <a href="/"><FontAwesomeIcon icon={faSearch} size="1x" className="mx-1 text-black-50 verticalMiddle"/></a>
           </Col>
         </Row>

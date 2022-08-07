@@ -13,8 +13,8 @@ const Post = () => {
     </Row>
     <Row>
       <Col className='d-flex justify-content-center font-secondary'>
-        <h6 className="px-1 mt-2 text-warning">Music</h6>
-        <h6 className="px-1 mt-2 text-warning">Life</h6>
+        <p className="px-1 mt-2 text-warning">Music</p>
+        <p className="px-1 mt-2 text-warning">Life</p>
       </Col>
     </Row>
     <Row>

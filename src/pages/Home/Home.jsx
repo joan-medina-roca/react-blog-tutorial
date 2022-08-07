@@ -13,7 +13,7 @@ const Home = () => {
             <Col className='col-12 col-lg-9'>
                 <Posts />
             </Col>
-            <Col className='col-3 d-none d-lg-block border-start my-3'>
+            <Col className='col-3 d-none d-lg-block border-start my-4'>
                 <Sidebar/>
             </Col>
           </Row>
